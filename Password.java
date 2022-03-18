@@ -4,7 +4,8 @@ package password;
  * Used to store a String that matches desired specifications
  * @author RyanO 
  * @author JordanC
- * @version 0.1
+ * @version 0.5
+ * @date 3/15/2022
  */
 public class Password {
 	//What are our requirements??
