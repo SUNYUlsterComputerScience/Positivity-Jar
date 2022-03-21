@@ -1,0 +1,27 @@
+Created-By: 11.0.12 (International Business Machines Corporation)
+IBM-App-ForceRestart: uninstall,
+ install
+IBM-AppliesTo: io.openliberty;productVersion="22.0.0.2"
+IBM-Feature-Version: 2
+IBM-InstallTo: core
+IBM-License-Agreement: wlp/lafiles/LA
+IBM-Process-Types: client,
+ server
+IBM-ProductID: io.openliberty
+Subsystem-Content: io.openliberty.jaxrs30_1.0-javadoc.zip; type=file; location:="dev/api/ibm/javadoc/io.openliberty.jaxrs30_1.0-javadoc.zip",
+ com.ibm.websphere.appserver.eeCompatible-9.0; type="osgi.subsystem.feature",
+ io.openliberty.jakarta.activation-2.0; type="osgi.subsystem.feature",
+ io.openliberty.jaxrs30; location:="dev/api/ibm/,lib/"; version="[1.0.0,1.0.200)",
+ io.openliberty.jakarta.restfulWS.3.0; location:="dev/api/spec/,lib/"; mavenCoordinates="jakarta.ws.rs:jakarta.ws.rs-api:3.0.0"; version="[1.0.0,1.0.200)"
+Subsystem-Description: %description
+Subsystem-License: https://www.eclipse.org/legal/epl-v10.html
+Subsystem-Localization: OSGI-INF/l10n/io.openliberty.jakarta.restfulWS-3.0
+Subsystem-ManifestVersion: 1
+Subsystem-Name: Jakarta RESTful Web Services 3.0
+Subsystem-SymbolicName: io.openliberty.jakarta.restfulWS-3.0; visibility:=private; singleton:=true
+Subsystem-Type: osgi.subsystem.feature
+Subsystem-Vendor: IBM Corp.
+Subsystem-Version: 1.0.0
+Tool: Bnd-5.3.0.202102221516
+WLP-Activation-Type: parallel
+WLP-DisableAllFeatures-OnConflict: true

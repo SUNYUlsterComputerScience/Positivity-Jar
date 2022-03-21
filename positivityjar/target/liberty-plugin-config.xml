@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<liberty-plugin-config>
+    <installDirectory>/home/bitnami/team-rice-pudding/positivityjar/target/liberty/wlp</installDirectory>
+    <serverDirectory>/home/bitnami/team-rice-pudding/positivityjar/target/liberty/wlp/usr/servers/defaultServer</serverDirectory>
+    <userDirectory>/home/bitnami/team-rice-pudding/positivityjar/target/liberty/wlp/usr</userDirectory>
+    <serverOutputDirectory>/home/bitnami/team-rice-pudding/positivityjar/target/liberty/wlp/usr/servers/defaultServer</serverOutputDirectory>
+    <serverName>defaultServer</serverName>
+    <configDirectory>/home/bitnami/team-rice-pudding/positivityjar/src/main/liberty/config</configDirectory>
+    <configFile>/home/bitnami/team-rice-pudding/positivityjar/src/main/liberty/config/server.xml</configFile>
+    <appsDirectory>apps</appsDirectory>
+    <looseApplication>true</looseApplication>
+    <stripVersion>false</stripVersion>
+    <installAppPackages>project</installAppPackages>
+    <applicationFilename>positivityjar.war.xml</applicationFilename>
+    <assemblyArtifact>
+        <groupId>io.openliberty</groupId>
+        <artifactId>openliberty-kernel</artifactId>
+        <version>22.0.0.2</version>
+        <type>zip</type>
+    </assemblyArtifact>
+    <assemblyArchive>/home/bitnami/.m2/repository/io/openliberty/openliberty-kernel/22.0.0.2/openliberty-kernel-22.0.0.2.zip</assemblyArchive>
+    <assemblyInstallDirectory>/home/bitnami/team-rice-pudding/positivityjar/target/liberty</assemblyInstallDirectory>
+    <refresh>false</refresh>
+    <installAppsConfigDropins>/home/bitnami/team-rice-pudding/positivityjar/target/liberty/wlp/usr/servers/defaultServer/configDropins/defaults/install_apps_configuration_1491924271.xml</installAppsConfigDropins>
+    <projectType>war</projectType>
+</liberty-plugin-config>

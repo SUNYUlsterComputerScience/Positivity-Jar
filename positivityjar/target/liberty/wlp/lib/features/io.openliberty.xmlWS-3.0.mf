@@ -1,0 +1,43 @@
+Created-By: 11.0.12 (International Business Machines Corporation)
+IBM-API-Package: org.apache.cxf.binding.soap.wsdl.extensions; type=internal,
+ org.apache.cxf.databinding; type=internal
+IBM-App-ForceRestart: uninstall,
+ install
+IBM-AppliesTo: io.openliberty;productEdition=Open;productVersion="22.0.0.2"
+IBM-Feature-Version: 2
+IBM-InstallTo: core
+IBM-License-Agreement: wlp/lafiles/LA
+IBM-ProductID: io.openliberty
+IBM-ShortName: xmlWS-3.0
+Subsystem-Content: wsgen; ibm.executable:=true; ibm.file.encoding:=ebcdic; type=file; location:="bin/xmlWS/wsgen",
+ wsimport; ibm.executable:=true; ibm.file.encoding:=ebcdic; type=file; location:="bin/xmlWS/wsimport",
+ ibm-ws-bnd_1_0.xsd; type=file; location:="dev/api/ibm/schema/ibm-ws-bnd_1_0.xsd",
+ wsimport.bat; type=file; location:="bin/xmlWS/wsimport.bat",
+ ws-wsimport.jar; type=file; location:="bin/xmlWS/tools/ws-wsimport.jar"; version="[1.0.0,1.0.200)",
+ wsgen.bat; type=file; location:="bin/xmlWS/wsgen.bat",
+ ws-wsgen.jar; type=file; location:="bin/xmlWS/tools/ws-wsgen.jar"; version="[1.0.0,1.0.200)",
+ io.openliberty.globalhandler.spi_1.0-javadoc.zip; type=file; location:="dev/spi/ibm/javadoc/io.openliberty.globalhandler.spi_1.0-javadoc.zip",
+ com.ibm.websphere.appserver.eeCompatible-9.0; type="osgi.subsystem.feature",
+ com.ibm.websphere.appserver.servlet-5.0; type="osgi.subsystem.feature",
+ com.ibm.websphere.appserver.globalhandler-1.0; type="osgi.subsystem.feature",
+ io.openliberty.xmlws.common-3.0; type="osgi.subsystem.feature",
+ io.openliberty.globalhandler.spi; location:="dev/spi/ibm/,lib/"; type=jar; version="[1.0.0,1.0.200)",
+ com.ibm.ws.javaee.ddmodel.ws; version="[1.0.0,1.0.200)",
+ com.ibm.ws.jaxws.2.3.common.jakarta; start-phase:=CONTAINER_LATE; version="[1.0.0,1.0.200)",
+ com.ibm.ws.jaxws.webcontainer.jakarta; version="[1.0.0,1.0.200)",
+ com.ibm.ws.jaxws.2.3.web.jakarta; version="[1.0.0,1.0.200)",
+ com.ibm.ws.jaxws.2.3.wsat; version="[1.0.0,1.0.200)",
+ com.ibm.ws.webservices.javaee.common.jakarta; version="[1.0.0,1.0.200)"
+Subsystem-Description: %description
+Subsystem-License: https://www.eclipse.org/legal/epl-v10.html
+Subsystem-Localization: OSGI-INF/l10n/io.openliberty.xmlWS-3.0
+Subsystem-ManifestVersion: 1
+Subsystem-Name: Jakarta XML Web Services 3.0
+Subsystem-SymbolicName: io.openliberty.xmlWS-3.0; visibility:=public; singleton:=true
+Subsystem-Type: osgi.subsystem.feature
+Subsystem-Vendor: IBM Corp.
+Subsystem-Version: 1.0.0
+Tool: Bnd-5.3.0.202102221516
+WLP-Activation-Type: parallel
+WLP-AlsoKnownAs: jaxws-3.0
+WLP-DisableAllFeatures-OnConflict: true
