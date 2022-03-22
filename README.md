@@ -12,17 +12,17 @@ We are a group of students at Ulster County Community Collage creating a Positiv
 - IBM
 
 ## Contributors
-- Jordan
-- Brandon
-- Manny
-- James 
-- Jackson 
-- Vanessa
-- Mudasir
-- Ryan
-- Malvin
-- Lucas
-- Colin 
-- Andrew 
-- Jodie
+- Jordan Carboy
+- Brandon Conrad
+- Manny Cruze
+- James Ferraro
+- Jackson Hindes
+- Vanessa Umbro
+- Mudasir Khan
+- Ryan Omar
+- Malvin Rivas
+- Lucas Saucer
+- Colin Stewart
+- Andrew Sykut
+- Jodie Wilbur
 
