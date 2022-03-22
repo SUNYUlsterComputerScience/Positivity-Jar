@@ -14,7 +14,7 @@ We are a group of students at Ulster County Community Collage creating a Positiv
 ## Contributors
 - Jordan Carboy
 - Brandon Conrad
-- Manny Cruze
+- Manny Cruz
 - James Ferraro
 - Jackson Hindes
 - Vanessa Umbro
