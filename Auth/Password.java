@@ -5,7 +5,7 @@ package password;
  * @author RyanO 
  * @author JordanC
  * @version 0.5
- * @date 3/15/2022
+ * @since 3/15/2022
  */
 public class Password {
 	//What are our requirements??
