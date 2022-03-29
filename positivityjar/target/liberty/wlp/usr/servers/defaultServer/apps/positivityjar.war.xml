@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<archive>
-    <dir sourceOnDisk="/home/bitnami/team-rice-pudding/positivityjar/target/classes" targetInArchive="/WEB-INF/classes"/>
-    <file sourceOnDisk="/home/bitnami/team-rice-pudding/positivityjar/target/tmp/META-INF/MANIFEST.MF" targetInArchive="/META-INF/MANIFEST.MF"/>
-</archive>
