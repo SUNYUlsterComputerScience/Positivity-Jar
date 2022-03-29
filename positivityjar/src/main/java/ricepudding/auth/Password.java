@@ -1,4 +1,4 @@
-package password;
+package ricepudding.auth;
 
 /**
  * Used to store a String that matches desired specifications

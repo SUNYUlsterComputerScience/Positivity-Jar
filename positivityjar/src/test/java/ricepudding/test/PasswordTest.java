@@ -1,4 +1,6 @@
-package password;
+package ricepudding.test;
+
+import ricepudding.auth.Password;
 
 import java.util.Scanner;
 
@@ -22,7 +24,7 @@ public class PasswordTest {
 		while (continueLoop) {
 			Scanner in = new Scanner(System.in);
 			
-			System.out.println("A Password must be between " + Password.getMinLength() + "-" + 
+			System.out.println("A Password must be between " + Password.getMinLength() + "-" +
 					Password.getMaxLength() + " characters long, and must contain at least 1 uppercase letter, " + 
 					"1 lowercase letter, 1 number, and 1 special character\nPlease enter a password: ");
 			Password pass = new Password(in.next());	// Test does not accept whitespace values (Password should though)
