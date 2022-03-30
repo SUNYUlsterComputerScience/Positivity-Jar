@@ -3,7 +3,7 @@
 # The Jar of Positivity 
 **Welcome to the RicePudding repository.**
 
-We are a group of students at Ulster County Community Collage creating a Positivity-Jar application. In this poject we are using [Open Liberty](https://openliberty.io/). As we progress and the program grows, so will this documentation.
+We are a group of students at Ulster County Community College creating a Positivity-Jar application. In this project we are using [Open Liberty](https://openliberty.io/). As we progress and the program grows, so will this documentation.
 
 ## Stakeholders
 - Lou Thomason
@@ -26,7 +26,7 @@ We are a group of students at Ulster County Community Collage creating a Positiv
 - Andrew Sykut
 - Jodie Wilbur
 
-## Conributing to the Frontend
+## Contributing to the Frontend
 
 Opening and running the React app:
 
