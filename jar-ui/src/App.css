@@ -1,143 +1,89 @@
 /***    General     ***/
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto", sans-serif
-}
-
+h1 {text-align: center;}
+p {text-align: center;}
 body {
-  margin: 0 auto
+  font-family: Arial, Verdana, Tahoma, Helvetica;
+  background-color: #f7dbd7;
 }
 
-.m-5-auto {
-  margin: 5rem auto
+.topnav {
+  overflow: hidden;
+  background-color: #faeacb;
 }
 
-.primary-button {
-  margin-top: 5rem;
-  margin-right: 1rem;
-  padding: .6rem;
-  width: 10rem;
-  background: #222;
-  border: none;
-  color: #fff;
-  font-size: 1.2rem;
-  transition: all .5s;
-  cursor: pointer;
-  text-transform: capitalize
-}
-
-/***    Landing Page     ***/
-.main-title,
-.main-para {
-  color: #f1f1f1
-}
-
-.main-title {
-  padding-top: 10rem;
-  font-size: 5rem;
-  font-family: 'Fascinate', cursive;
-  text-transform: uppercase
-}
-
-.main-para {
-  font-size: 2.5rem;
-  text-Transform: capitalize
-}
-
-#reg_btn span {
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-#reg_btn span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-#reg_btn:hover span {
-padding-right: 25px;
-}
-
-#reg_btn:hover span:after {
-opacity: 1;
-right: 0;
-}
-
-/***    Login Page     ***/
-h2 {
-  font-weight: 300
-}
-
-form {
-  display: inline-block;
-  background: #f3f3f3;
-  border: 1px solid #ddd;
-  border-radius: 2px;
-  padding: 2rem;
-  margin: 2rem 0 1rem 0
-}
-
-form label {
+.topnav a {
   float: left;
-  font-size: .9rem;
-  margin: 0;
-  padding: 0
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
-.right-label {
-  float: right;
-  cursor: pointer
+.topnav a:hover {
+  background-color: #9cc0e7;
+  color: black;
 }
 
-input {
-  width: 15rem;
-  padding: .3rem;
+.topnav a.active {
+  background-color: #f7dbd7;
+  color: black;
+}
+
+#login {
+  width: 360px;
+  margin: 0 auto;
+}
+
+#login div {
+  /*margin-left: 10%;
+  margin-right: 10%;*/
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#login .user,
+#login .pass {
+  background-color: #e4e4e4;
   border-radius: 5px;
-  outline: none;
-  border: none
+  padding-left: 10px;
+  background-repeat: no-repeat;
+  position: left center;
+  overflow: hidden;
 }
 
-#sub_btn {
-  display: block;
-  width: 100%;
-  padding: .3rem;
+#login input {
+  height: 30px;
+}
+
+#login .user input,
+#login .pass input {
+  background-color: #e4e4e4;
+  border-radius: 0px 0px 0px 0px;
   border: none;
-  background: #222;
-  color: #fff;
+  color: #000;
+  font-size: 1.1em;
+  padding-left: 2px;
+  width: 97%;
+}
+
+#login .send {
   border-radius: 3px;
 }
 
-#sub_btn:hover {
-  background: #333;
-  transition: all .5s
+#login .send input {
+  width: 100%;
+  border-radius: 0px;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: bold;
+  border: 0;
+  background-color: #9dc1e8;
+  text-shadow: 0px 0px 0px #000;
+  box-shadow: 3px 3px 5px #000;
 }
-
-footer p {
-  margin: 0;
-  font-size: .9rem
-}
-
-/***    Register Page     ***/
-#checkbox {
-  width: 1rem
-}
-
-form span {
-  font-size: .8rem
-}
-
-#reset_pass_lbl {
-  float: left
-}
-
-/***    Home Page     ***/
-.home-page-title {
-  color: #222
+.footer {
+  background-color: #faeacb;
+  text-align: center;
+  padding: 10px;
 }
