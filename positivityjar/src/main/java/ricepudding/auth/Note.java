@@ -1,4 +1,4 @@
-package positivityjar;
+package ricepudding.auth;
 
 import java.time.LocalDateTime;
 
