@@ -1,3 +1,4 @@
+// Jodie Wilbur
 //<!---React REST with Functional Component--->
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
