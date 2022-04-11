@@ -17,7 +17,7 @@ We are a group of students at Ulster County Community College creating a Positiv
 - Manny Cruz
 - James Ferraro
 - Jackson Hindes
-- Vanessa Umbro
+- Vanessa Umb
 - Mudasir Khan
 - Ryan Omar
 - Malvin Rivas
