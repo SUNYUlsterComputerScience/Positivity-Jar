@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Positivity Jar</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      /* On small screens, set height to 'auto' for sidenav and grid */
+      @media screen and (max-width: 767px) {
+        .sidenav {
+          height: auto;
+          padding: 15px;
+        }
+
+        .row.content {
+          height: auto;
+        }
+      }
+
+    </style>
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse" id="mainNav">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" id="logo" href="#">Logo</a>
+          <a class="navbar-brand" id="home" href="#">Home</a>
+          <a class="navbar-brand" id="create" href="#">Create</a>
+          <a class="navbar-brand" id="share" href="#">Share</a>
+          <a class="navbar-brand" id="about" href="#">About</a>
+
+        </div>
+        <!collapsable menu in Navbar>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+
+              <li><a class="navbar-brand" id="contact" href="#">Contact</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+          </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid text-center" id="canvas">
+      <div class="row content">
+        <div class="col-sm-2 sidenav">
+          <p>Profile/Avatar</p>
+          <p>Name</p>
+          <p>Last name</p>
+          <p>Email</p>
+        </div>
+        <div class="col-sm-8 text-left">
+          <h1>
+            Positivity Jar
+          </h1>
+
+          <!Carasol feature>
+
+            <hr>
+            <h3>Test</h3>
+            <p>Lorem ipsum...</p>
+        </div>
+        <div class="col-sm-2 sidenav">
+          <div class="well">
+            <p></p>
+          </div>
+          <div class="well">
+            <p>
+              Contacts
+            </p>
+            <p><a href="#">friends</a></p>
+            <p><a href="#">Family</a></p>
+            <p><a href="#">Coworkers</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="container-fluid text-center">
+      <p>2022 RicePudding</p>
+    </footer>
+
+  </body>
+
+</html>
