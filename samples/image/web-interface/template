@@ -96,3 +96,50 @@
   </body>
 
 </html>
+/**CSS for Template*/
+h1 {
+  text-align: center;
+}
+
+ /* Remove the navbar's default margin-bottom and rounded borders */
+#mainNav {
+  background-color: #faeacb;
+  color: black;
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+/* drop down menu in Navbar*/
+#myNavbar {
+  background-color: #f7dbd7;
+  color: #9cc0e7;
+}
+
+#canvas {
+  background-color: #f7dbd7;
+  color: black;
+}
+
+#logo {
+  color: black;
+}
+
+/*   Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {
+  height: 450px
+}
+
+/* Set gray background color and 100% height */
+.sidenav {
+  padding-top: 20px;
+  background-color: #eeeeee;
+  height: 100%;
+}
+
+/* Set black background color, white text and some padding */
+footer {
+  background-color: #faeacb;
+  color: black;
+  padding: 15px;
+}
+
