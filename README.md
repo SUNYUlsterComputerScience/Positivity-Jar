@@ -26,6 +26,24 @@ We are a group of students at Ulster County Community College creating a Positiv
 - Andrew Sykut
 - Jodie Wilbur
 
+## Teams
+#### FrontEnd
+- Jodie Wilbur(Lead)
+- Vanessa Umbro
+- Malvin Rivas
+- Jackson Hindes
+#### Backend
+- Manny Cruz(Lead)
+- Lucas Saucer
+- Colin Stewart
+- Andrew Sykut
+- Mudasir Khan
+- Jordan Carboy
+- Ryan Omar
+- James Ferraro
+- Brandon Conrad
+
+
 ## Contributing to the Frontend
 
 Opening and running the React app:
