@@ -1,0 +1,93 @@
+/***    General     ***/
+h1 {text-align: center;}
+p {text-align: center;}
+body {
+  font-family: Arial, Verdana, Tahoma, Helvetica;
+  background-color: #f7dbd7;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #faeacb;
+}
+
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #9cc0e7;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #f7dbd7;
+  color: black;
+}
+
+#login {
+  width: 360px;
+  margin: 0 auto;
+}
+
+#login div {
+  /*margin-left: 10%;
+  margin-right: 10%;*/
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#login .user,
+#login .pass {
+  background-color: #e4e4e4;
+  border-radius: 5px;
+  padding-left: 10px;
+  background-repeat: no-repeat;
+  position: left center;
+  overflow: hidden;
+}
+
+#login input {
+  height: 30px;
+}
+
+#login .user input,
+#login .pass input {
+  background-color: #e4e4e4;
+  border-radius: 0px 0px 0px 0px;
+  border: none;
+  color: #000;
+  font-size: 1.1em;
+  padding-left: 2px;
+  width: 97%;
+}
+
+#login .send {
+  border-radius: 3px;
+}
+
+#login .send input {
+  width: 100%;
+  border-radius: 0px;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: bold;
+  border: 0;
+  background-color: #9dc1e8;
+  text-shadow: 0px 0px 0px #000;
+  box-shadow: 3px 3px 5px #000;
+}
+.footer {
+  position: absolute;
+bottom: 0;
+width: 100%;
+height: 2.5rem;            /* Footer height */
+background-color: #faeacb;
+text-align: center;
+padding: 5px;
+}
