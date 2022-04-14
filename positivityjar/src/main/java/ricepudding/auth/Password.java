@@ -1,14 +1,14 @@
 package ricepudding.auth;
 
 /**
- * Used to store a String that matches desired specifications
+ * Used to store a String that matches desired specifications (8-20 char, 1 uppercase/1 lowercase char, 1 number, 1 special char)
  * @author RyanO 
  * @author JordanC
  * @version 0.5
  * @since 3/15/2022
  */
 public class Password {
-	//What are our requirements??
+	//Our requirements below
 	/**
 	 * String value of the Password
 	 */
