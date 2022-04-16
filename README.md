@@ -44,7 +44,7 @@ We are a group of students at Ulster County Community College creating a Positiv
 - Jordan Carboy
 - Ryan Omar
 - James Ferraro
-- Brandon Conrad
+
 
 
 ## Contributing to the Frontend
