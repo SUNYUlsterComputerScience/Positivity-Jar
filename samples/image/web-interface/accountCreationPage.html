@@ -1,56 +1,68 @@
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      margin: 0;
-    }
+<!DOCTYPE html>
+<html lang="en">
 
-  </style>
-</head>
+  <head>
+    <title>Positivity Jar</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
 
+  <body>
 
-<html>
-  <div class="topnav">
-    <div class="container">
-      <p>Account Creation</p>
-    </div>
-    <div class="toprightnav">
-      <a href="#loginpage">Back</a> </div>
-  </div>
+    <!--Navigation Bar-->
+    <nav class="navbar fixed-top" id="mainNav">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+        <!--logo in Navigation Bar-->
+        <div> <img src="https://cdn.discordapp.com/attachments/901212715354292284/965723083119919174/image.png" class="navbar-brand">
+          <h2>Account Creation</h2>
+        </div>
+      </div>
+    </nav>
 
-</html>
-<div>
-  <h1>Positivity Jar</h1>
-  <p>
-    Get ready to create and share some positivity with others!
-  </p>
-</div>
+    <div class="container-fluid text-center" id="canvas">
+      <h1>Positivity Jar</h1>
+      <p>
+        Get ready to create and share some positivity with others!
+      </p><br><br>
+      <!--Submit Form-->
+      <div id="newAccount">
+        <div id="email">
+          <div class=user>
+            <input type="text" placeholder="email" required />
+          </div>
+          <div class=pass>
+            <input type="password" placeholder="password" required />
+          </div>
+          <div class="send"><br>
+            <button href="#homepage" type="submit" form="nameform" value="Submit">Create</button>
 
-<div id="login">
-  <div class=user>
-    <input type="text" placeholder="name" required />
-  </div>
-  <div id="email">
-    <div class=user>
-      <input type="text" placeholder="email" required />
-    </div>
-    <div class=pass>
-      <input type="password" placeholder="password" required />
-    </div>
-    <div class="send">
-      <button href="#homepage" type="submit" form="nameform" value="Submit">Create</button>
-
-      <div>
-        <div class="redirect">
-          <p>
-            Have an account?
-            <a href="#loginpage">Please click here!</a> </p>
-
+            <div class="redirect">
+              <p>
+                Have an account?
+                <a href="#loginpage">Please click here!</a> </p>
+              <br><br>
+            </div>
+          </div>
+          <br><br>
+          <div id="footerlogo" class="footerLogos" style="text-align: center; width: 100%;">
+            <img src="https://cdn.discordapp.com/attachments/941384898743246848/964583347785433168/CSC-205_Team_Logo_Footer.png">
+          </div>
+          <footer id="footer" class="navbar fixed-bottom">
+            <div class="container-fluid">
+              <a class="navbar-brand"></a>
+            </div>
+          </footer>
         </div>
       </div>
     </div>
+  </body>
 
-    <div id="footerlogo" class="footerLogos" style="text-align: center; width: 100%;">
-      <img src="https://cdn.discordapp.com/attachments/941384898743246848/964583347785433168/CSC-205_Team_Logo_Footer.png">
-
-    </div>
+</html>
