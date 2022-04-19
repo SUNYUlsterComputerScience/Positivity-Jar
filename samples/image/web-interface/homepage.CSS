@@ -1,0 +1,97 @@
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+/* Remove the navbar's default margin-bottom and rounded borders */
+#mainNav {
+  background-color: #faeacb;
+  color: black;
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+/* drop down menu in Navbar*/
+#myNavbar {
+  background-color: #f7dbd7;
+
+}
+
+/* body */
+#canvas {
+  background-color: #f7dbd7;
+  color: black;
+}
+
+#logo {
+  position: absolute;
+  bottom: 0;
+  width: 10%;
+  height: 3rem;
+  background-color: #faeacb;
+  padding: 0px;
+}
+
+
+/*   Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {
+  height: 450px
+}
+
+/* Set gray background color and 100% height */
+.sidenav {
+  padding-top: 50px;
+  background-color: #eeeeee;
+  height: 100%;
+  border-radius: 12px;
+}
+
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  margin: 30px 25px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  background-color: #9cc0e7;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {
+  background-color: #6fa4dc
+}
+
+.button:active {
+  background-color: #6fa4dc;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#mainNav a:hover:not(.active) {
+  background-color: #9cc0e7;
+  color: black;
+}
+
+.footerlogo {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  background-color: #f7dbd7;
+  padding: 0px;
+}
+
+#footer {
+  padding: 0px;
+  background-color: #f7dbd7;
+  bottom: 0;
+
+}
