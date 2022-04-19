@@ -1,7 +1,3 @@
-body {
-  font-family: Arial, Verdana, Tahoma, Helvetica;
-  background-color: #f7dbd7;
-}
 
 h1 {
   text-align: center;
@@ -11,79 +7,68 @@ p {
   text-align: center;
 }
 
-body {
-  font-family: Arial, Verdana, Tahoma, Helvetica;
+ /* Remove the navbar's default margin-bottom and rounded borders */
+#mainNav {
+  background-color: #faeacb;
+  color: black;
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+/* drop down menu in Navbar*/
+#myNavbar {
   background-color: #f7dbd7;
-}
-<!--back button-->
-.toprightnav {
-  overflow: hidden;
-  background-color: #faeacb;
-}
 
-.toprightnav a {
-  float: right;
+}
+/* body */
+#canvas {
+  background-color: #f7dbd7;
   color: black;
-  text-align: center;
-  padding: 5px 5px;
-  text-decoration: none;
-  font-size: 20px;
-  margin-top: 25px;
-  margin-bottom: 10px;
 }
 
-.toprightnav a:hover {
-  background-color: #9cc0e7;
-  color: white;
-}
-
-.topnav {
-  overflow: hidden;
+#logo {
+  position: absolute;
+  bottom: 0;
+  width: 10%;
+  height: 3rem;
   background-color: #faeacb;
+  padding: 0px;
 }
 
-.topnav p {
-  float: left;
-  color: black;
-  text-align: left;
-  padding: 5px 5px;
-  text-decoration: none;
-  font-size: 24px;
-}
 
-#login {
+#newAccount {
   width: 360px;
   margin: auto;
 }
 
-#login div {
+#newAccount div {
   /*margin-left: 10%;
   margin-right: 10%;*/
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-a:hover:not(.active) {
+#mainNav a:hover:not(.active) {
   background-color: #9cc0e7;
 }
 
 
-#login .user,
-#login .pass {
+#newAccount .user,
+#newAccount .pass {
   background-color: #e4e4e4;
-  border-radius: 5px;
+  border-radius: 10px;
   padding-left: 10px;
   background-repeat: no-repeat;
   position: left center;
   overflow: hidden;
 }
 
-#login input {
+#newAccount input {
   height: 30px;
 }
 
-#login .user input,
-#login .pass input {
+#newAccount .user input,
+#newAccount .pass input {
   background-color: #e4e4e4;
   border-radius: 10px 10px 10px 10px;
   border: none;
@@ -93,13 +78,13 @@ a:hover:not(.active) {
   width: 100%;
 }
 
-#login .send {
-  border-radius: 5px;
+#newAccount .send {
+  border-radius: 10px;
 }
 
-#login .send button {
+#newAccount .send button {
   width: 100%;
-  border-radius: 15px;
+  border-radius: 10px;
   text-transform: uppercase;
   color: #000000;
   font-size: 1.2em;
@@ -107,17 +92,7 @@ a:hover:not(.active) {
   border: 0;
   background-color: #9dc0e7;
   text-shadow: 0px 0px 0px #000;
-  box-shadow: 3px 3px 5px #000;
-}
-
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 1.5rem;
-  background-color: #faeacb;
-
-  padding: 0px;
+  box-shadow: 3px 3px 3px #000;
 }
 
 .footerlogo {
@@ -125,7 +100,12 @@ a:hover:not(.active) {
   bottom: 0;
   width: 100%;
   height: 2.5rem;
-  background-color: #faeacb;
-
+  background-color: #f7dbd7;
   padding: 0px;
 }
+#footer{
+  padding: 0px;
+  background-color: #f7dbd7;
+  bottom: 0;
+            
+        }
