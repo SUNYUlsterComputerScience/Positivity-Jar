@@ -1,0 +1,26 @@
+package positivityjar;
+
+import java.time.LocalDateTime;
+
+public class TestApp
+{
+
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+		User master = new User("stewartc43@my.sunyulster.edu", "PaS$W0Rd", "Cole Stewart");
+		User user = new User("example@example.com", "password", "John Doe");
+		
+		LocalDateTime expirationDate = LocalDateTime.of(2077, 3, 23, 12, 30, 22);
+		PositivityJar testJar = new PositivityJar(master, expirationDate, "Test Jar");
+		testJar.addContributor(user);
+		
+		Note testNote = new Note("Yay is my positivity.", master);
+		Note testNote2 = new Note("Another test positivity.", user);
+		testJar.addNote(testNote);
+		testJar.generateTxtSummary();
+		testJar.generateHTMLSummary();
+		System.out.println(Formatter.getString(expirationDate));
+	}
+
+}

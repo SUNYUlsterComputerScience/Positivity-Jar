@@ -1,0 +1,55 @@
+package stewartc.rest;
+
+import jakarta.ws.rs.core.MediaType;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+
+import jakarta.ws.rs.*;
+
+@Path("testing")
+public class TestingResource {
+	@POST
+	@Produces(MediaType.TEXT_PLAIN)
+	public String postTest() {
+			File summaryFile; // the file
+			FileWriter pen;   // the writer
+			
+			try
+			{
+				summaryFile = new File("test.txt"); // open a new file if there isn't one already
+				summaryFile.setWritable(true);          // make the file writable
+				pen = new FileWriter("test.txt");   // open a writer to write to the file
+				
+				                                        // write the html to the file
+				pen.write(String.format("%s%n%s%n%s",
+						String.format("%s%n%s%n%s%s%s%n%s%n",
+								"<!DOCTYPE html>",
+								"<html>",
+								"<head>",
+								"<title>", this.label, "</title>",
+								"<body>"
+								),
+						String.format("%s%s%s%n%s%s%s%n%s%s%s%n%s%s%s%n",
+								"<h1>", this.label, "</h1>",
+								"<p>", this.contributorList(), "</p>",
+								"<p>", this.timeList(), "</p><hr>",
+								"<p>", this.noteList(), "</p>"
+								),
+						String.format("%s%n%s",
+								"</body>",
+								"</html>"
+								)));
+				pen.close();
+			}
+			catch (IOException e)
+			{
+				System.err.println("An error occurred that shouldn't have. "
+						+ "You should report this to Colin Stewart. "
+						+ "Tell him that there was a file access error when producing the html summary.");
+			}
+		}
+		return "teststring Cole";
+	}
+}

@@ -1,0 +1,5 @@
+package stewartc.rest;
+
+public class TestingResource {
+
+}

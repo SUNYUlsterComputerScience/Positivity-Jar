@@ -1,0 +1,13 @@
+package stewartc.rest;
+
+import jakarta.ws.rs.core.MediaType;
+import jakarta.ws.rs.*;
+
+@Path("testing")
+public class TestingResource {
+	@POST
+	@Produces(MediaType.TEXT_PLAIN)
+	public String postTest() {
+		return 
+	}
+}

@@ -1,0 +1,21 @@
+package positivityjar;
+
+import java.time.LocalDateTime;
+
+public class TestApp
+{
+
+	public static void main(String[] args)
+	{
+		// TODO Auto-generated method stub
+		User master = new User("stewartc43@my.sunyulster.edu", "PaS$W0Rd", "Cole Stewart");
+		LocalDateTime expirationDate = LocalDateTime.of(2077, 3, 23, 12, 30, 22);
+		PositivityJar testJar = new PositivityJar(master, expirationDate, "Test Jar");
+		Note testNote = new Note("Elliot is a poop smear.", master);
+		testJar.addNote(testNote);
+		testJar.generateTxtSummary();
+		testJar.generateHTMLSummary();
+		System.out.println(Formatter.getString(expirationDate));
+	}
+
+}

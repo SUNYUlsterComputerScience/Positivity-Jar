@@ -1,0 +1,34 @@
+package stewartc.rest;
+
+import jakarta.ws.rs.core.MediaType;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+
+import jakarta.ws.rs.*;
+
+@Path("testing")
+public class TestingResource {
+	
+	@POST
+	@Produces(MediaType.TEXT_PLAIN)
+	public String postTest() {
+		File summaryFile; // the file
+		FileWriter pen;   // the writer
+
+		try
+		{
+			summaryFile = new File("test.txt"); // open a new file if there isn't one already
+			summaryFile.setWritable(true);          // make the file writable
+			pen = new FileWriter("test.txt");   // open a writer to write to the file
+			pen.write("request was made");
+			pen.close();
+		}
+		catch (IOException e)
+		{
+			// do nothing e
+		}
+		return "teststring Cole";
+	}
+}
