@@ -30,11 +30,13 @@ We are a group of students at Ulster County Community College creating a Positiv
 #### Scrum Leaders
 - Andrew Skyut (First Sprint)
 - Colin Stewart (Second Sprint)
+
 #### FrontEnd
 - Jodie Wilbur (Lead)
 - Vanessa Umbro
 - Malvin Rivas
 - Jackson Hindes
+
 #### Backend
 - Manny Cruz (Lead)
 - Lucas Saucer
