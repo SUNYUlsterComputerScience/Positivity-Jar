@@ -3,7 +3,7 @@ package ricepudding.auth;
 /**
  * Used to store a String that matches desired specifications
  * @author RyanO 
- * @author JordanC
+ * @author Jordan Carboy
  * @version 0.5
  * @since 3/15/2022
  */
