@@ -5,6 +5,7 @@
     <title>Positivity Jar</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="accountCreationPage.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -33,16 +34,16 @@
         Get ready to create and share some positivity with others!
       </p><br><br>
       <!--Submit Form-->
-      <div id="newAccount">
-        <div id="email">
-          <div class=user>
-            <input type="text" placeholder="email" required />
-          </div>
-          <div class=pass>
-            <input type="password" placeholder="password" required />
-          </div>
-          <div class="send"><br>
-            <button href="#homepage" type="submit" form="nameform" value="Submit">Create</button>
+
+<form style="text-align: center" action="http://34.195.163.133:9080/ricejar/api/register/" method="POST" enctype="test/plain">
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name"><br>
+  <label for="email">Email:</label><br>
+  <input type="text" id="email" name="email"><br>
+  <label for="password">Password:</label><br>
+  <input type="text" id="password" name="password" ><br><br>
+  <input type="submit" value="Create">
+</form>
 
             <div class="redirect">
               <p>
