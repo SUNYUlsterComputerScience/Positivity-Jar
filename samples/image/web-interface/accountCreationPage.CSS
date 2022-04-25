@@ -95,6 +95,64 @@ p {
   box-shadow: 3px 3px 3px #000;
 }
 
+#createButton {
+  width: 60%;
+  background-color: #afc6ff;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#createButton:hover {
+  background-color: #99ADDF;
+}
+
+#name {
+  width: 60%;
+  border: 2px solid #e4e4e4;
+  border-radius: 8px;
+  border-color: #e4e4e4;
+  background-color: #e4e4e4;
+}
+
+#email {
+  width: 60%;
+  border: 2px solid #e4e4e4;
+  border-radius: 8px;
+  border-color: #e4e4e4;
+  background-color: #e4e4e4;
+}
+
+#password {
+  width: 60%;
+  border: 2px solid #e4e4e4;
+  border-radius: 8px;
+  border-color: #e4e4e4;
+  background-color: #e4e4e4;
+}
+
+#formBox {
+  width: 350px;
+  height: 325px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-radius: 75px;
+  background-color: white;
+  align-items: center;
+  box-shadow: 10px 5px 5px grey;
+}
+
+h2 {
+  text-align: center;
+}
+
+
 .footerlogo {
   position: absolute;
   bottom: 0;
@@ -107,5 +165,5 @@ p {
   padding: 0px;
   background-color: #f7dbd7;
   bottom: 0;
-            
+
         }

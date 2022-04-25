@@ -19,7 +19,7 @@
         <ul class="nav navbar-nav">
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
         </ul>
         <!--logo in Navigation Bar-->
         <div> <img src="https://github.com/SUNYUlsterComputerScience/Positivity-Jar/blob/main/src/image/icon-64.png?raw=true" class="navbar-brand">
@@ -34,24 +34,25 @@
         Get ready to create and share some positivity with others!
       </p><br><br>
       <!--Submit Form-->
-
+<div id="formBox">
 <form style="text-align: center" action="http://34.195.163.133:9080/ricejar/api/register/" method="POST" enctype="test/plain">
-  <label for="name">Name:</label><br>
-  <input type="text" id="name" name="name"><br>
-  <label for="email">Email:</label><br>
-  <input type="text" id="email" name="email"><br>
-  <label for="password">Password:</label><br>
-  <input type="text" id="password" name="password" ><br><br>
-  <input type="submit" value="Create">
+  <br>
+  <input type="text" id="name" placeholder=" name"><br>
+  <br>
+  <input type="text" id="email" placeholder=" email"><br>
+  <br>
+  <input type="text" id="password" placeholder=" password" ><br><br>
+  <input type="submit" id="createButton" value="Create">
 </form>
 
             <div class="redirect">
               <p>
                 Have an account?
-                <a href="#loginpage">Please click here!</a> </p>
+                <a href="login.html">Please click here!</a> </p>
               <br><br>
             </div>
           </div>
+
           <br><br>
           <div id="footerlogo" class="footerLogos" style="text-align: center; width: 100%;">
             <img src="https://github.com/SUNYUlsterComputerScience/Positivity-Jar/blob/main/logo_small2.png?raw=true">
