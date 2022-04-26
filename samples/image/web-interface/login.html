@@ -33,21 +33,23 @@
 </html>
 
 <!--Login form-->
-<form style="text-align: center" action="/homepage.html">
-  <label for="email">Email:</label><br>
-  <input type="text" id="email" name="email"><br>
-  <label for="password">Password:</label><br>
-  <input type="text" id="password" name="password" ><br><br>
-  <input type="submit" value="Login">
-</form>
+<div id="formBox">
+  <form style="text-align: center" action="homepage.html">
+    <br>
+    <input type="text" id="email" placeholder="email"><br>
+    <br>
+    <input type="text" id="password" placeholder="password" ><br><br>
+    <input type="submit" id="loginButton" value="Login">
+  </form>
 
-  <p>
-    <button type="button">Forgot Password?</button>
-    <br><br>
+
+    <input type="submit" id="forgotPasswordButton" value="Forgot Password?">
+  <!--  <br><br>
     Not Registered?
-    <button type="button">Create an account</button>
-  </p>
+    <input type="submit" id="createAccountButton" value="Create an Account"> -->
+    <div class="createAccountButton"><a href="accountCreationPage.html">Create an Account</a></div>
 
+</div>
 
 <div class="footer">
   <p>2022 RicePudding</p>

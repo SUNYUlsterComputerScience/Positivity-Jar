@@ -1,5 +1,5 @@
 <style>
-    
+
 h1 {
   text-align: center;
 }
@@ -90,6 +90,91 @@ body {
   box-shadow: 3px 3px 5px #000;
 }
 
+#formBox {
+  width: 350px;
+  height: 325px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-radius: 75px;
+  background-color: white;
+  align-items: center;
+  box-shadow: 10px 5px 5px grey;
+}
+
+#email {
+  width: 60%;
+  border: 2px solid #e4e4e4;
+  border-radius: 8px;
+  border-color: #e4e4e4;
+  background-color: #e4e4e4;
+}
+
+#password {
+  width: 60%;
+  border: 2px solid #e4e4e4;
+  border-radius: 8px;
+  border-color: #e4e4e4;
+  background-color: #e4e4e4;
+}
+
+#loginButton {
+  width: 60%;
+  background-color: #afc6ff;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+}
+
+#loginButton:hover {
+  background-color: #99ADDF;
+}
+
+#forgotPasswordButton {
+  width: 60%;
+  background-color: #afc6ff;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  margin-left: 70px;
+}
+
+#forgotPasswordButton:hover {
+  background-color: #99ADDF;
+}
+
+#createAccountButton, .createAccountButton {
+  width: 50%;
+  background-color: #afc6ff;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  margin-left: 70px;
+  font-style: normal;
+}
+
+#createAccountButton:hover {
+  background-color: #99ADDF;
+}
+
+.createAccountButton:hover {
+  background-color: #99ADDF;
+}
+
 .footer {
   position: absolute;
   bottom: 0;
@@ -99,7 +184,6 @@ body {
   background-color: #faeacb;
   text-align: center;
   padding: 5px;
-}  
-    
-    </style>
+}
 
+    </style>
