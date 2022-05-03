@@ -3,6 +3,11 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  text-align: center;
+  margin-left: 60px;
+}
+
 p {
   text-align: center;
 }
@@ -97,7 +102,7 @@ p {
 
 #createButton {
   width: 60%;
-  background-color: #afc6ff;
+  background-color: #04047d;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -107,7 +112,7 @@ p {
 }
 
 #createButton:hover {
-  background-color: #99ADDF;
+  background-color: #04467d;
 }
 
 #name {
@@ -148,9 +153,7 @@ p {
   box-shadow: 10px 5px 5px grey;
 }
 
-h2 {
-  text-align: center;
-}
+
 
 
 .footerlogo {
@@ -165,5 +168,4 @@ h2 {
   padding: 0px;
   background-color: #f7dbd7;
   bottom: 0;
-
         }

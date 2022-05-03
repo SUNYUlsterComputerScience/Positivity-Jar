@@ -1,6 +1,19 @@
 <style>
 
+
+a:link { text-decoration: none; }
+
+a:visited { text-decoration: none; }
+
+a:hover { text-decoration: none; }
+
+a:active { text-decoration: none; }
+
 h1 {
+  text-align: center;
+}
+
+h2 {
   text-align: center;
 }
 
@@ -8,9 +21,31 @@ p {
   text-align: center;
 }
 
+#canvas {
+  background-color: #f7dbd7;
+  color: black;
+}
+
 body {
   font-family: Arial, Verdana, Tahoma, Helvetica;
   background-color: #f7dbd7;
+}
+
+#logo {
+  position: absolute;
+  bottom: 0;
+  width: 10%;
+  height: 3rem;
+  background-color: #faeacb;
+  padding: 0px;
+}
+
+#mainNav {
+  background-color: #faeacb;
+  color: black;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-radius: 0;
 }
 
 .topnav {
@@ -92,7 +127,7 @@ body {
 
 #formBox {
   width: 350px;
-  height: 325px;
+  height: 375px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -122,7 +157,7 @@ body {
 
 #loginButton {
   width: 60%;
-  background-color: #afc6ff;
+  background-color: #04047d;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -133,12 +168,12 @@ body {
 }
 
 #loginButton:hover {
-  background-color: #99ADDF;
+  background-color: #04467d;
 }
 
 #forgotPasswordButton {
   width: 60%;
-  background-color: #afc6ff;
+  background-color: #04047d;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -146,17 +181,17 @@ body {
   border-radius: 8px;
   cursor: pointer;
   text-align: center;
-  margin-left: 70px;
+
 }
 
 #forgotPasswordButton:hover {
-  background-color: #99ADDF;
+  background-color: #04467d;
 }
 
 #createAccountButton, .createAccountButton {
-  width: 50%;
-  background-color: #afc6ff;
-  color: white;
+  width: 60%;
+  background-color: #04047d;
+  color: #f2f2f2;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
@@ -168,11 +203,13 @@ body {
 }
 
 #createAccountButton:hover {
-  background-color: #99ADDF;
+  background-color: #04467d;
+  color: #f2f2f2;
 }
 
 .createAccountButton:hover {
-  background-color: #99ADDF;
+  background-color: #04467d;
+  color: #f2f2f2;
 }
 
 .footer {
