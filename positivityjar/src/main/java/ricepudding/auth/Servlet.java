@@ -9,20 +9,31 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+
 import java.io.IOException;
 
-
+/**
+ * This sets the Realm (space) for all users that will be utilizing the application
+ * I have set two user roles below; "user" and "admin"
+ */
 @BasicAuthenticationMechanismDefinition(
-        realmName="${'test realm'}" // Doesn't need to be expression, just for example
+        realmName = "${'positivity jar'}"
 )
 
-@WebServlet("/servlet")
-@DeclareRoles({ "user", "admin"})
-@ServletSecurity(@HttpConstraint(rolesAllowed = {"user", "admin"}))
+
+@WebServlet("/servlet") //connects to the servlet class which is where a person would use to log into the app
+@DeclareRoles({"user", "admin"})
+@ServletSecurity(@HttpConstraint(rolesAllowed = "user")) //only allows for those with the roles for now
 public class Servlet extends HttpServlet {
 
     private static final long serialVersionUID = 1L;
 
+    /**
+     *The code below  allows a person to log and will redirect them to a page letting them know
+     * that they have successfully logged in and shows their current role
+     * this is mostly for testing purposes and can be access via http://localhost:9080/servlet
+     *It uses HTTP requests to verify the information and allow the user to log in
+     */
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
@@ -40,3 +51,4 @@ public class Servlet extends HttpServlet {
     }
 
 }
+

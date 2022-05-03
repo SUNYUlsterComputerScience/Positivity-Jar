@@ -1,13 +1,13 @@
 package ricepudding.auth;
 
 import jakarta.annotation.PostConstruct;
-import jakarta.annotation.PreDestroy;
 import jakarta.annotation.Resource;
 import jakarta.annotation.sql.DataSourceDefinition;
 import jakarta.ejb.Singleton;
 import jakarta.ejb.Startup;
 import jakarta.inject.Inject;
 import jakarta.security.enterprise.identitystore.Pbkdf2PasswordHash;
+
 import javax.sql.DataSource;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -15,7 +15,13 @@ import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Map;
 
-@DataSourceDefinition(name = "java:global/jdbc/positivity_jar", className = "org.mariadb.jdbc.Driver", url = "jdbc:mariadb://localhost:3306/positivity_jar", user = "USER", password = "PASSWORD")
+/**
+ * Below is the connection to the database
+ * it uses a .env file for the username and the password
+ * This .env file will not be uploaded to Git but it will be
+ * uploaded to the AWS server.
+ */
+@DataSourceDefinition(name = "java:global/jdbc/positivity_jar", className = "org.mariadb.jdbc.Driver", url = "jdbc:mariadb://localhost:3306/positivity_jar", user = "${env.DATABASE_USER}", password = "${env.DATABASE_PASSWORD}")
 @Singleton
 @Startup
 public class DatabaseSetup {
@@ -24,7 +30,7 @@ public class DatabaseSetup {
     private DataSource dataSource;
 
     @Inject
-    private Pbkdf2PasswordHash passwordHash;
+    private Pbkdf2PasswordHash passwordHash; //hashes the password
 
     @PostConstruct
     public void init() {
@@ -35,47 +41,21 @@ public class DatabaseSetup {
         parameters.put("Pbkdf2PasswordHash.SaltSizeBytes", "64");
         passwordHash.initialize(parameters);
 
-        executeUpdate(dataSource, "DROP TABLE IF EXISTS user_accounts");
-        executeUpdate(dataSource, "DROP TABLE IF EXISTS user_groups");
-
+        /**
+         * creates a table if it does not exist
+         * enters the name, email, and password (hashed) to the database
+         * also enters a separate table the group the person belongs to
+         */
         executeUpdate(dataSource,
                 "CREATE TABLE IF NOT EXISTS user_accounts(name VARCHAR(64), email VARCHAR(100) UNIQUE KEY, password VARCHAR(255))");
         executeUpdate(dataSource,
-                "CREATE TABLE IF NOT EXISTS user_groups(name VARCHAR(64), group_name VARCHAR(64))");
-
-        executeUpdate(dataSource,
-                "INSERT INTO user_accounts VALUES('user', 'user@user.com', '" + passwordHash.generate("password".toCharArray()) + "')");
-        executeUpdate(dataSource,
-                "INSERT INTO user_accounts VALUES('reza', 'reza@reza.net', '" + passwordHash.generate("secret1".toCharArray()) + "')");
-        executeUpdate(dataSource,
-                "INSERT INTO user_accounts VALUES('alex', 'alex@alex.org', '" + passwordHash.generate("secret2".toCharArray()) + "')");
-        executeUpdate(dataSource,
-                "INSERT INTO user_accounts VALUES('arjan', 'arjan@arjan.me', '" + passwordHash.generate("secret2".toCharArray()) + "')");
-        executeUpdate(dataSource,
-                "INSERT INTO user_accounts VALUES('werner', 'werner@werner.co.uk', '" + passwordHash.generate("secret2".toCharArray()) + "')");
-
-        executeUpdate(dataSource, "INSERT INTO user_groups VALUES('user', 'admin')");
-
-        executeUpdate(dataSource, "INSERT INTO user_groups VALUES('reza', 'user')");
-
-        executeUpdate(dataSource, "INSERT INTO user_groups VALUES('alex', 'user')");
-
-        executeUpdate(dataSource, "INSERT INTO user_groups VALUES('arjan', 'admin')");
-
-        executeUpdate(dataSource, "INSERT INTO user_groups VALUES('werner', 'user')");
+                "CREATE TABLE IF NOT EXISTS user_groups(email VARCHAR(100), group_name VARCHAR(64))");
 
     }
 
-    @PreDestroy
-    public void destroy() {
-        try {
-            executeUpdate(dataSource, "DROP TABLE IF EXISTS user_accounts");
-            executeUpdate(dataSource, "DROP TABLE IF EXISTS user_groups");
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-    }
-
+    /**
+     *Method that updates the database with the new user
+     */
     private void executeUpdate(DataSource dataSource, String query) {
         try (Connection connection = dataSource.getConnection()) {
             try (PreparedStatement statement = connection.prepareStatement(query)) {
