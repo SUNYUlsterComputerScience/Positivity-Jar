@@ -1,3 +1,7 @@
+/**
+*@author Emmanuel Cruz
+*/
+
 package ricepudding.auth;
 
 import java.sql.DriverManager;
