@@ -1,3 +1,9 @@
+/**
+*@author Emmanuel Cruz
+*/
+
+
+
 package ricepudding.auth;
 
 import jakarta.security.enterprise.identitystore.DatabaseIdentityStoreDefinition;
