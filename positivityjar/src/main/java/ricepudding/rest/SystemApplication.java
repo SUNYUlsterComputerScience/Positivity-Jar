@@ -1,3 +1,7 @@
+/**
+*@author Emmanuel Cruz
+*/
+
 package ricepudding.rest;
 
 import jakarta.ws.rs.ApplicationPath;
